@@ -5,15 +5,181 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ConverterActivity">
+
     <TextView
         android:id="@+id/txtConverter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:text="Converter"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:text="Decimal"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConverter" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="216dp"
+        android:text="Byte"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConverter" />
+
+    <TextView
+        android:id="@+id/txtResultDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Result : "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDecimal" />
+
+    <Spinner
+        android:id="@+id/spinnerDecimal"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDecimal" />
+
+    <EditText
+        android:id="@+id/inputCelcius"
+        android:layout_width="232dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="384dp"
+        android:height="45dp"
+        android:ems="10"
+        android:hint="Celcius"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/txtConverter" />
+
+    <TextView
+        android:id="@+id/txtResultCelcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        android:text="Result : "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDecimal" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="396dp"
+        android:text="Celcius"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConverter" />
+
+    <EditText
+        android:id="@+id/inputByte"
+        android:layout_width="232dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="200dp"
+        android:height="45dp"
+        android:ems="10"
+        android:hint="Byte"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/txtConverter" />
+
+    <TextView
+        android:id="@+id/txtByte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:text="Result : "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDecimal" />
+
+    <Spinner
+        android:id="@+id/spinnerByte"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="192dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDecimal" />
+
+    <EditText
+        android:id="@+id/inputDecimal"
+        android:layout_width="232dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:height="45dp"
+        android:ems="10"
+        android:hint="Decimal"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/txtConverter" />
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="111dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:text="Çevir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultCelcius" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="286dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputCelcius">
+
+        <RadioButton
+            android:id="@+id/rdbKelvin"
+            android:layout_width="117dp"
+            android:layout_height="50dp"
+            android:text="Kelvin" />
+
+        <RadioButton
+            android:id="@+id/rdtFah"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:text="Fahrenayt" />
+    </RadioGroup>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
